@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(Item.class)
-public abstract class ItemMixin {
+// Directional POV fix for item raycasts.\npublic abstract class ItemMixin {
     @Inject(
         method = "getPlayerPOVHitResult",
         at = @At("HEAD"),
